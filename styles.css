@@ -136,7 +136,7 @@
         grid-column-end:3;
         grid-row-start:1;
         grid-row-end:3;
-        max-height: 200px;
+        max-height: 250px;
         display: flex;
         justify-content: flex-end;
        }
@@ -150,6 +150,7 @@
         text-align:left;
         align-items: baseline;
         font-size: clamp(10px, 2vw, 20px);
+        padding-top: 12vh;
        }
 
 
@@ -202,39 +203,50 @@
 
         /* Mobile (up to 600px) */
         @media (max-width: 600px) {
-        .main-content {
-            grid-template-columns: auto;
-        }
+            .main-content {
+                grid-template-columns: auto;
+            }
 
-        .drop-down-button h3 {
-            font-size: 16px;
-        } 
+            .drop-down-button h3 {
+                font-size: 16px;
+            } 
 
-        .content {
-           flex-direction: column;
-        }
+            .content {
+            flex-direction: column;
+            }
 
-        .footer{
-            display: grid;
-            grid-template-rows: auto auto;
-            /* background-color: beige;
-            margin-top: 5px;
-            border-radius: 10px;
-            padding: 0; */
-        }
-
+            .footer{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
+            }
+            .f-content{
+                text-align: center;
+                text-shadow: 2px 1px 10px;
+            }
+            .f-link{
+                margin-top: 5px;
+                justify-content: center;
+                margin-top: 0;
+            }
+            .f-link>ul{
+                padding: 0;
+                margin-top: 0;
+            }
         }
 
         /* Tablet (601px – 1024px) */
         @media (min-width: 601px) and (max-width: 1024px) {
-        .main-content {
-            grid-template-columns: auto auto;
-        }
+            .main-content {
+                grid-template-columns: auto auto;
+            }
 
-        .drop-down-button h3 {
-            font-size: 18px;
-        }
-
+            .drop-down-button h3 {
+                font-size: 18px;
+            }
+            .open heading>div>img{
+                max-width: 40vw;
+            }
         }
 
         /* for normal laptop */
@@ -242,7 +254,10 @@
             heading>div>img{
                 width: 100%;
                 border-radius: 10px;
-                height: 33vh;
+                height: 34vh;
+            }
+            .open heading>div>img{
+                max-width: 30vw;
             }
         }
 
@@ -252,6 +267,9 @@
                 width: 100%;
                 border-radius: 10px;
                 height: 40vh;
+            }
+            .open heading>div>img{
+                max-width: 30vw;
             }
         }
 
