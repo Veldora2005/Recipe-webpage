@@ -12,6 +12,7 @@
         box-shadow: 2px 2px 2px ;
         padding: 10px;
         margin: 10px;
+        
        }
 
        .drop-down-content{
@@ -69,6 +70,7 @@
         display: block;
        }
 
+       
        section.open {
         grid-column: 1 / -1;  
        }
@@ -105,11 +107,10 @@
             padding: 0;
         }
         heading>div>img{
-           max-width: inherit;
+           width: 100%;
            border-radius: 10px;
         }
         .h-p{
-            /* position: relative; */
             text-align:center;
             padding-bottom: 0px ;
             padding-left: 10px;
@@ -234,6 +235,24 @@
             font-size: 18px;
         }
 
+        }
+
+        /* for normal laptop */
+        @media (min-width: 1024px) and (max-width:1920px){
+            heading>div>img{
+                width: 100%;
+                border-radius: 10px;
+                height: 33vh;
+            }
+        }
+
+        /* for laptop with 2k screen */
+        @media (min-width: 1920px){
+            heading>div>img{
+                width: 100%;
+                border-radius: 10px;
+                height: 40vh;
+            }
         }
 
 
