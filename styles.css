@@ -76,10 +76,6 @@
         /* background-position: left center; */
         transition: background-position 0.5s ease; /* smooth shift */
        }
-       .drop-down-button>button:hover{
-         /* used chat gpt here */
-        background-position: right center;  /* shift gradient */
-       }
 
        .drop-down-button h3{
         text-align: center;
@@ -279,6 +275,11 @@
             .open heading>div>img{
                 max-width: 40vw;
             }
+
+            .drop-down-button>button:hover{
+                /* used chat gpt here */
+                background-position: right center;  /* shift gradient */
+            }
         }
 
         /* for normal laptop */
@@ -291,6 +292,11 @@
             .open heading>div>img{
                 max-width: 30vw;
             }
+
+            .drop-down-button>button:hover{
+                /* used chat gpt here */
+                background-position: right center;  /* shift gradient */
+            }
         }
 
         /* for laptop with 2k screen */
@@ -302,6 +308,10 @@
             }
             .open heading>div>img{
                 max-width: 30vw;
+            }
+            .drop-down-button>button:hover{
+                /* used chat gpt here */
+            background-position: right center;  /* shift gradient */
             }
         }
 
